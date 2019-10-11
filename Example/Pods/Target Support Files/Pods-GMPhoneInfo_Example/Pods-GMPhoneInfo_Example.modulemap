@@ -1,0 +1,6 @@
+framework module Pods_GMPhoneInfo_Example {
+  umbrella header "Pods-GMPhoneInfo_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

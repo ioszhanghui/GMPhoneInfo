@@ -8,12 +8,43 @@
 
 #import "GMAppDelegate.h"
 
+#import <UserNotifications/UserNotifications.h>
+
+
 @implementation GMAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [self registerRemoteApplication:application WithOptions:launchOptions];
     // Override point for customization after application launch.
     return YES;
+}
+
+/*注册远程通知*/
+-(void)registerRemoteApplication:(UIApplication*)application WithOptions:(NSDictionary *)launchOptions{
+    if (@available(iOS 10.0, *)) {
+        //iOS10以上的系统
+        UNUserNotificationCenter * center = [UNUserNotificationCenter currentNotificationCenter];
+        UNAuthorizationOptions options = UNAuthorizationOptionBadge | UNAuthorizationOptionSound | UNAuthorizationOptionAlert;
+        center.delegate = (id<UNUserNotificationCenterDelegate>)self;
+        [center requestAuthorizationWithOptions:options completionHandler:^(BOOL granted, NSError * _Nullable error) {
+            if(!error){
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [[UIApplication sharedApplication] registerForRemoteNotifications]; // required to get the app to do anything at all about push notifications
+                });
+                NSLog( @"Push registration success." );
+            }else{
+                NSLog( @"Push registration FAILED" );
+                NSLog( @"ERROR: %@ - %@", error.localizedFailureReason, error.localizedDescription );
+                NSLog( @"SUGGESTIONS: %@ - %@", error.localizedRecoveryOptions, error.localizedRecoverySuggestion );
+            }
+        }];
+    }else{
+        //iOS8 - iOS10
+        UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeBadge | UIUserNotificationTypeAlert | UIUserNotificationTypeSound) categories:nil];
+        [application registerUserNotificationSettings:settings];
+        [application registerForRemoteNotifications];
+    }
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

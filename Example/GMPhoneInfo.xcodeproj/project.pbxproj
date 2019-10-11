@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1313C7BD23502BF400CFF97A /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1313C7BC23502BF400CFF97A /* Contacts.framework */; };
+		1313C7BF23502BFB00CFF97A /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1313C7BE23502BFB00CFF97A /* AddressBook.framework */; };
 		139D781188DEF2088ED34A66 /* Pods_GMPhoneInfo_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E8077C2CBA468F810EE5C7F /* Pods_GMPhoneInfo_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -37,10 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01B21A5BFE7AE11469A6AF75 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		01B21A5BFE7AE11469A6AF75 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		1313C7BC23502BF400CFF97A /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
+		1313C7BE23502BFB00CFF97A /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		1313C7C0235054FF00CFF97A /* GMPhoneInfo_Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GMPhoneInfo_Example.entitlements; sourceTree = "<group>"; };
 		1B5F94E0B1D5B0D64E3DB23A /* Pods-GMPhoneInfo_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMPhoneInfo_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GMPhoneInfo_Example/Pods-GMPhoneInfo_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		29B89562545A58DF7A152A40 /* Pods-GMPhoneInfo_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMPhoneInfo_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GMPhoneInfo_Tests/Pods-GMPhoneInfo_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		59331E2C4B43F1631C6D34BE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		59331E2C4B43F1631C6D34BE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* GMPhoneInfo_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GMPhoneInfo_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -60,7 +65,7 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		63B211CD443F1196640D110A /* GMPhoneInfo.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = GMPhoneInfo.podspec; path = ../GMPhoneInfo.podspec; sourceTree = "<group>"; };
+		63B211CD443F1196640D110A /* GMPhoneInfo.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GMPhoneInfo.podspec; path = ../GMPhoneInfo.podspec; sourceTree = "<group>"; };
 		6E8077C2CBA468F810EE5C7F /* Pods_GMPhoneInfo_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GMPhoneInfo_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -74,6 +79,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1313C7BF23502BFB00CFF97A /* AddressBook.framework in Frameworks */,
+				1313C7BD23502BF400CFF97A /* Contacts.framework in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
@@ -109,6 +116,7 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				1313C7C0235054FF00CFF97A /* GMPhoneInfo_Example.entitlements */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for GMPhoneInfo */,
 				6003F5B5195388D20070C39A /* Tests */,
@@ -130,6 +138,8 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1313C7BE23502BFB00CFF97A /* AddressBook.framework */,
+				1313C7BC23502BF400CFF97A /* Contacts.framework */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
@@ -207,7 +217,7 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				7A6D1D4746E2BEC73F45092F /* [CP] Embed Pods Frameworks */,
+				11B3BF29514E44F484C759A3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -248,6 +258,20 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "ioszhanghui@163.com";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 8LSS8PHWW5;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -295,6 +319,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		11B3BF29514E44F484C759A3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GMPhoneInfo_Example/Pods-GMPhoneInfo_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GMPhoneInfo/GMPhoneInfo.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GMPhoneInfo.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GMPhoneInfo_Example/Pods-GMPhoneInfo_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		17E1E2ACF5417807557CA293 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -311,24 +353,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7A6D1D4746E2BEC73F45092F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-GMPhoneInfo_Example/Pods-GMPhoneInfo_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GMPhoneInfo/GMPhoneInfo.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GMPhoneInfo.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GMPhoneInfo_Example/Pods-GMPhoneInfo_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8CB705AA46A955347842729D /* [CP] Check Pods Manifest.lock */ = {
@@ -504,9 +528,12 @@
 			baseConfigurationReference = 1B5F94E0B1D5B0D64E3DB23A /* Pods-GMPhoneInfo_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GMPhoneInfo_Example.entitlements;
+				DEVELOPMENT_TEAM = 8LSS8PHWW5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GMPhoneInfo/GMPhoneInfo-Prefix.pch";
 				INFOPLIST_FILE = "GMPhoneInfo/GMPhoneInfo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -520,9 +547,12 @@
 			baseConfigurationReference = F7CBB7F9AE16F0FB2B49F657 /* Pods-GMPhoneInfo_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GMPhoneInfo_Example.entitlements;
+				DEVELOPMENT_TEAM = 8LSS8PHWW5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GMPhoneInfo/GMPhoneInfo-Prefix.pch";
 				INFOPLIST_FILE = "GMPhoneInfo/GMPhoneInfo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

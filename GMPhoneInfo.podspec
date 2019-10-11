@@ -31,12 +31,23 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'GMPhoneInfo/Classes/**/*'
+
+    s.subspec 'AppInfo' do |aa|
+        aa.source_files ='GMPhoneInfo/Classes/AppInfo/**/*'
+        aa.frameworks = 'CoreLocation','AddressBook','Contacts','Photos','AVFoundation'
+        aa.requires_arc = true
+    end
+    s.subspec 'DeviceInfo' do |bb|
+        bb.source_files ='GMPhoneInfo/Classes/DeviceInfob/**/*'
+        bb.frameworks = 'AdSupport'
+        bb.requires_arc = true
+    end
   
   # s.resource_bundles = {
   #   'GMPhoneInfo' => ['GMPhoneInfo/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+   s.frameworks = 'UIKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
