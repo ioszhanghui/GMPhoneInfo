@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
   s.requires_arc = true
 
-  s.source_files = 'GMPhoneInfo/Classes/**/*'
+  s.source_files = 'GMPhoneInfo/Classes/GMPhoneInfo_Header.h'
 
     s.subspec 'AppInfo' do |aa|
         aa.source_files ='GMPhoneInfo/Classes/AppInfo/**/*'
@@ -39,7 +39,7 @@ Pod::Spec.new do |s|
         aa.requires_arc = true
     end
     s.subspec 'DeviceInfo' do |bb|
-        bb.source_files ='GMPhoneInfo/Classes/DeviceInfob/**/*'
+        bb.source_files ='GMPhoneInfo/Classes/DeviceInfo/**/*'
         bb.frameworks = 'AdSupport'
         bb.requires_arc = true
     end
