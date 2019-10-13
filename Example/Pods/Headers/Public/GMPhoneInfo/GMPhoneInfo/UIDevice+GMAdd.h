@@ -1,0 +1,1 @@
+../../../../../../GMPhoneInfo/Classes/StaticFramework/GMPhoneInfo.framework/Headers/UIDevice+GMAdd.h

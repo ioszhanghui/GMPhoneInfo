@@ -4,11 +4,7 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - GMPhoneInfo (0.1.0):
-    - GMPhoneInfo/AppInfo (= 0.1.0)
-    - GMPhoneInfo/DeviceInfo (= 0.1.0)
-  - GMPhoneInfo/AppInfo (0.1.0)
-  - GMPhoneInfo/DeviceInfo (0.1.0)
+  - GMPhoneInfo (0.1.0)
 
 DEPENDENCIES:
   - FBSnapshotTestCase
@@ -24,8 +20,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  GMPhoneInfo: 5b2ceffba7679df8a37bd5892caac13c92519cb0
+  GMPhoneInfo: f18a105cce8ce51d983c8980af3bd01126d9f9e9
 
-PODFILE CHECKSUM: c24287c6a6fd349a8fff790e649e02d1b5c5f772
+PODFILE CHECKSUM: 14b412f01e926b23a37ab2c57e465f5d8513d0a4
 
 COCOAPODS: 1.5.3

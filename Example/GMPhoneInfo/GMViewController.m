@@ -7,9 +7,10 @@
 //
 
 #import "GMViewController.h"
-#import "UIDevice+GMAdd.h"
-
-#import "GMAppInfoTool.h"
+#import <GMPhoneInfo/GMPhoneInfo_Header.h>
+//#import "UIDevice+GMAdd.h"
+//
+//#import "GMAppInfoTool.h"
 
 
 

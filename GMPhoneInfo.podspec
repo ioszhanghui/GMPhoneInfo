@@ -31,18 +31,19 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
   s.requires_arc = true
 
-  s.source_files = 'GMPhoneInfo/Classes/GMPhoneInfo_Header.h'
-
-    s.subspec 'AppInfo' do |aa|
-        aa.source_files ='GMPhoneInfo/Classes/AppInfo/**/*'
-        aa.frameworks = 'CoreLocation','AddressBook','Contacts','Photos','AVFoundation'
-        aa.requires_arc = true
-    end
-    s.subspec 'DeviceInfo' do |bb|
-        bb.source_files ='GMPhoneInfo/Classes/DeviceInfo/**/*'
-        bb.frameworks = 'AdSupport'
-        bb.requires_arc = true
-    end
+  #s.vendored_frameworks ='GMPhoneInfo/Classes/StaticFramework/*.framework'
+  s.source_files = 'GMPhoneInfo/Classes/BaseCode/GMPhoneInfo_Header.h'
+  
+  s.subspec 'AppInfo' do |aa|
+      aa.source_files ='GMPhoneInfo/Classes/BaseCode/AppInfo/**/*'
+      aa.frameworks = 'CoreLocation','AddressBook','Contacts','Photos','AVFoundation'
+      aa.requires_arc = true
+  end
+  s.subspec 'DeviceInfo' do |bb|
+      bb.source_files ='GMPhoneInfo/Classes/BaseCode/DeviceInfo/**/*'
+      bb.frameworks = 'AdSupport'
+      bb.requires_arc = true
+  end
   
   # s.resource_bundles = {
   #   'GMPhoneInfo' => ['GMPhoneInfo/Assets/*.png']

@@ -1,4 +1,4 @@
-framework module Pods_GMPhoneInfo_Tests {
+module Pods_GMPhoneInfo_Tests {
   umbrella header "Pods-GMPhoneInfo_Tests-umbrella.h"
 
   export *

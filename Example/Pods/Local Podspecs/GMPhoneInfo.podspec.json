@@ -1,9 +1,9 @@
 {
   "name": "GMPhoneInfo",
   "version": "0.1.0",
-  "summary": "A short description of GMPhoneInfo.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/ioszhanghui@163.com/GMPhoneInfo",
+  "summary": "获取设备和APP信息",
+  "description": "获取设备信息 获取APP信息",
+  "homepage": "https://github.com/ioszhanghui/GMPhoneInfo.git",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,32 +12,13 @@
     "ioszhanghui@163.com": "yomingyo@gmail.com"
   },
   "source": {
-    "git": "https://github.com/ioszhanghui@163.com/GMPhoneInfo.git",
+    "git": "https://github.com/ioszhanghui/GMPhoneInfo.git",
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
-  "source_files": "GMPhoneInfo/Classes/**/*",
-  "frameworks": "UIKit",
-  "subspecs": [
-    {
-      "name": "AppInfo",
-      "source_files": "GMPhoneInfo/Classes/AppInfo/**/*",
-      "frameworks": [
-        "CoreLocation",
-        "AddressBook",
-        "Contacts",
-        "Photos",
-        "AVFoundation"
-      ],
-      "requires_arc": true
-    },
-    {
-      "name": "DeviceInfo",
-      "source_files": "GMPhoneInfo/Classes/DeviceInfob/**/*",
-      "frameworks": "AdSupport",
-      "requires_arc": true
-    }
-  ]
+  "requires_arc": true,
+  "vendored_frameworks": "GMPhoneInfo/Classes/StaticFramework/*.framework",
+  "frameworks": "UIKit"
 }
